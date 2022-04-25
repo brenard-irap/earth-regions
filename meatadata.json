@@ -1,0 +1,21 @@
+{
+	"name": "EarthRegions",
+	"description": "# Classification of Earth plasma regions.\n\nThis module use the predefined models available in [Github](https://gitlab.com/aidaspace/notebooks_aida/-/tree/master/04_sitl_classification_region).\n\nThe methode is fully describe in: Automatic Classification of Plasma Regions in Near-Earth Space With Supervised Machine Learning: Application to Magnetospheric Multi Scale 2016–2019 Observations - Breuillard Hugo, Dupuis Romain, Retino Alessandro, Le Contel Olivier, Amaya Jorge, Lapenta Giovanni - Published 2020 Frontiers in Astronomy and Space Sciences. [DOI](https://doi.org/10.3389/fspas.2020.00055)",
+	"args": [],
+	"hyperparameters": [],
+	"defaults": {
+		"start":"2019-11-09T00:00:00",
+		"stop":"2019-11-10T00:00:00"
+
+	},
+	"output": {
+		"type": "catalog",
+		"filename": "output_classes.cat"
+	},
+	"install": {
+		"python_version": "3.8",
+		"requirements": "requirements.txt",
+		"files": ["data", "data.py", "export.py", "model.py", "main.py"],
+		"executable": "main"
+	}
+}

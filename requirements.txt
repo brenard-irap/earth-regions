@@ -3,5 +3,5 @@ pandas
 tensorflow==2.6.0
 scikit-learn
 more_itertools
-speasy
+speasy==0.10.4
 keras==2.6.0
